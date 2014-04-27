@@ -1,0 +1,244 @@
+\documentclass[11pt]{amsart}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\usepackage{mathtools}
+\usepackage{enumerate}
+\usepackage{pstricks-add}
+\DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\DeclareMathOperator{\Null}{null}
+\DeclareMathOperator{\Dim}{dim}
+\DeclareMathOperator{\range}{range}
+\DeclareMathOperator{\lop}{\mathcal{L}}
+\DeclareMathOperator{\mat}{Mat}
+\DeclareMathOperator{\Span}{span}
+\DeclareMathOperator{\ra}{\rangle}
+\DeclareMathOperator{\la}{\langle}
+\DeclareMathOperator{\Real}{Re}
+\DeclareMathOperator{\R}{{\bf R}}
+\DeclareMathOperator{\C}{{\bf C}}
+\DeclareMathOperator{\Q}{{\bf Q}}
+\DeclareMathOperator{\Z}{{\bf Z}}
+\DeclareMathOperator{\vect}{{\bf v}}
+\DeclareMathOperator{\x}{{\bf x}}
+\DeclareMathOperator{\fix}{{Fix}}
+\DeclareMathOperator{\aut}{{Aut}}
+\DeclareMathOperator{\conv}{{conv}} 
+\newcommand{\vlist}[1]{ {\bf v}_1, {\bf v}_2, \dots , {\bf v}_#1}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+\newcommand{\Bansbox}{
+\begin{center}  
+\begin{tabular}{|c|}        %%%%      Big Box For Answers     %%%%%%%
+\hline
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hline
+\end{tabular}\\
+\end{center}}
+\newcommand{\ansbox}{
+\begin{center}  
+\begin{tabular}{|c|}        %%%%      Big Box For Answers     %%%%%%%
+\hline
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hline
+\end{tabular}\\
+\end{center}}
+\newtheorem*{quest}{Question}
+\newtheorem*{defi}{Definition}
+\newcommand{\graph}{
+\psset{xunit=0.788593779572266cm,yunit=0.9223730814639903cm}
+\begin{pspicture*}(-9.35,-8.57)(9.67,7.7)
+\psgrid[subgriddiv=0,gridlabels=0,gridcolor=lightgray](0,0)(-9.35,-8.57)(9.67,7.7)
+\psset{xunit=0.788593779572266cm,yunit=0.9223730814639903cm,algebraic=true,dotstyle=o,dotsize=3pt 0,linewidth=0.8pt,arrowsize=3pt 2,arrowinset=0.25}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1,Dy=1,ticksize=-2pt 0,subticks=2]{->}(0,0)(-9.35,-8.57)(9.67,7.7)
+\end{pspicture*}}
+
+
+%\date{}                                           % Activate to display a given date or no date
+
+\begin{document}
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+ \textsc{Name:}
+\end{flushleft}
+\end{minipage}
+\begin{minipage}{0.6\textwidth}
+\begin{flushright} \Large
+{\bf Math 70   \\
+Final Exam}
+\end{flushright}
+\end{minipage}\\
+
+\HRule
+
+
+\begin{table}[htdp]
+
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+Question & Score \\
+\hline
+ & \\
+1 &\hspace{3cm}  \\
+ & \\
+\hline
+ & \\
+2 &\hspace{1.5cm}  \\
+ & \\
+\hline
+ & \\
+3 &\quad \\ & \\
+\hline & \\
+4& \quad\\ & \\
+\hline & \\
+5 &\quad \\ & \\
+\hline & \\
+6 &\quad \\ & \\
+\hline & \\
+7 &\quad \\ & \\
+\hline & \\
+8 &\quad \\ & \\
+\hline & \\
+9 & \quad\\ & \\
+\hline
+& \\
+Total & \quad\\ & \\
+\hline
+\end{tabular}
+\end{center}
+\label{default}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\subsection*{1}
+
+Tickets at FantasyLand amusement park are \$20 for children and \$30 for adults. Sixth grade students at Midtown Middle School have an end-of-the year class party at Fantasyland. The students buy children’s tickets, and the teachers and chaperones buy adult tickets.  Altogether, they buy a total of 110 tickets and the total cost is \$2,290. How many of each ticket did they buy?
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+
+\subsection*{2}
+    A triangle has vertices $(0, –1), (9, –1),$ and $(6,1)$.  What system of inequalities would have this triangle as its solution?  It would be a good idea to start with the  graph:
+\graph
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+
+\subsection*{3}The number of bacteria in a petri dish grows exponentially.  Based on the results in the table, write an equation and sketch a graph of the function that illustrates the growing number of bacteria over time. 
+\begin{table}[htdp]
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+Time in Hours (s) & Number of Bacteria \\
+\hline
+1 & 40 \\
+\hline
+3 & 160 \\
+\hline
+ & \\
+\hline
+\end{tabular}
+\end{center}
+\label{default}
+\end{table}%
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+
+\subsection*{4}
+Show an equation, a table (with at least 5 x-values), and a graph for the function   $\log_2(x)$   shifted 2 units to the left and 3 units upward.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+
+\subsection*{5}The graph of a quadratic function is a parabola with x-intercepts $(–3, 0)$ and $ (1, 0)$ and vertex $(–1, 8)$.  Write an equation for it. 
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+
+\subsection*{6}The level of caffeine in the bloodstream peaks shortly after drinking a cup of coffee.  If Zack’s peak caffeine blood level is 150 mg and the level of caffeine in his blood has an hourly decay factor of 0.781, what is the half-life of the caffeine in his bloodstream?  (Give an algebraic solution using logarithms, then give an exact calculation if you 
+have a calculator.) 
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+
+\subsection*{7}The earthquake in Sendai, Japan in 2010, had a Richter scale number of 8.9.  The 2010 earthquake in Haiti had a Richter reading of 7.0.  Use the formula below for $R$, the Richter number, where value of $X_a$ represents the amplitude or destructive power of the earthquake.
+$$ R = \log (X_a)$$
+Explain how much greater the amplitude (or power) of the earthquake in Japan was.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+
+\subsection*{8}
+Delbert has a square deck that he wants to expand so there will be more room
+
+to party. His plans to add 5 meters in one direction and 2 meters in another to
+create a rectangular deck, as shown below (not to scale).  The new deck will have an area of
+48 square meters.
+\begin{center}
+\newrgbcolor{ayayay}{0.66 0.66 0.66}
+\newrgbcolor{vvvvvv}{0.33 0.33 0.33}
+\psset{xunit=0.6cm,yunit=0.6cm,algebraic=true,dotstyle=o,dotsize=3pt 0,linewidth=0.8pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1.29,-1.29)(6.87,5.82)
+\psline(0,3)(3,3)
+\psline(3,3)(3,0)
+\psline(3,0)(0,0)
+\psline(0,0)(0,3)
+\psline(0,4.48)(4.6,4.48)
+\psline(4.6,4.48)(4.6,0)
+\psline(4.6,0)(0,0)
+\psline(0,0)(0,4.48)
+\rput[tl](-0.4,4.07){5}
+\rput[tl](3.64,-.1){2}
+\rput[tl](-0.49,1.83){X}
+\rput[tl](1.31,-.1){X}
+\begin{scriptsize}
+\psdots[dotstyle=*,linecolor=ayayay](0,3)
+\psdots[dotstyle=*,linecolor=vvvvvv](3,3)
+\psdots[dotstyle=*,linecolor=vvvvvv](3,0)
+\psdots[dotstyle=*,linecolor=ayayay](0,0)
+\psdots[dotstyle=*,linecolor=ayayay](0,4.48)
+\psdots[dotstyle=*,linecolor=vvvvvv](4.6,4.48)
+\psdots[dotstyle=*,linecolor=vvvvvv](4.6,0)
+\end{scriptsize}
+\end{pspicture*}\end{center}
+
+Delbert arrives at Home Depot to buy supplies, when he remembers that he does not know the dimensions of the original deck.  Show him how to use algebra to figure this out.  Give your answer to the nearest tenth.
+
+
+
+
+\end{document}  

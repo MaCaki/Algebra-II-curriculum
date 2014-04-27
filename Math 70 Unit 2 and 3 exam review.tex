@@ -1,0 +1,172 @@
+\documentclass[11pt]{amsart}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\usepackage{mathtools}
+\usepackage{enumerate}
+\DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\DeclareMathOperator{\Null}{null}
+\DeclareMathOperator{\Dim}{dim}
+\DeclareMathOperator{\range}{range}
+\DeclareMathOperator{\lop}{\mathcal{L}}
+\DeclareMathOperator{\mat}{Mat}
+\DeclareMathOperator{\Span}{span}
+\DeclareMathOperator{\ra}{\rangle}
+\DeclareMathOperator{\la}{\langle}
+\DeclareMathOperator{\Real}{Re}
+\DeclareMathOperator{\R}{{\bf R}}
+\DeclareMathOperator{\C}{{\bf C}}
+\DeclareMathOperator{\Q}{{\bf Q}}
+\DeclareMathOperator{\Z}{{\bf Z}}
+\DeclareMathOperator{\vect}{{\bf v}}
+\DeclareMathOperator{\x}{{\bf x}}
+\DeclareMathOperator{\fix}{{Fix}}
+\DeclareMathOperator{\aut}{{Aut}}
+\DeclareMathOperator{\conv}{{conv}} 
+\newcommand{\vlist}[1]{ {\bf v}_1, {\bf v}_2, \dots , {\bf v}_#1}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+\newcommand{\Bansbox}{
+\begin{center}  
+\begin{tabular}{|c|}        %%%%      Big Box For Answers     %%%%%%%
+\hline
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hline
+\end{tabular}\\
+\end{center}}
+\newcommand{\ansbox}{
+\begin{center}  
+\begin{tabular}{|c|}        %%%%      Big Box For Answers     %%%%%%%
+\hline
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hline
+\end{tabular}\\
+\end{center}}
+\newtheorem*{quest}{Question}
+\newtheorem*{defi}{Definition}
+
+%\date{}                                           % Activate to display a given date or no date
+
+%\date{}                                           % Activate to display a given date or no date
+
+\begin{document}
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+ \textsc{}
+\end{flushleft}
+\end{minipage}
+\begin{minipage}{0.6\textwidth}
+\begin{flushright} \Large
+{\bf Math 70   \\
+Unit 2 and 3 exam Review} 
+\end{flushright}
+\end{minipage}\\
+
+\HRule
+\begin{quest} What is an exponent?  \end{quest}
+\ansbox 
+
+{\bf Write down all of the rules for exponents that you know and prove them: } 
+\vspace{10cm}
+
+{\bf Simplify : } 
+
+\begin{enumerate}
+\item $ (-1)^4 $ \\
+\item  $\displaystyle \frac{10^3}{10^{20}} $\\
+\item $ ( -2ab^2)^3 $\\
+\item $(2a^2b^{-1})^4 $ \\
+
+\item $\displaystyle\left( \frac{-5a^3}{a^2}\right)^4 $\\ \\
+
+
+\end{enumerate}
+
+{\bf Express the following in decimal form : }\\
+
+ $-10^4 + 10^5 $\\
+ 
+$3\cdot 10^3 + 8 \cdot 10^2 + 2\cdot 10^{-1} $ \\
+
+{\bf Convert to Scientific Notation: } 
+50 billion divided by 100 thousand \\ \\
+
+\begin{quest} What is a logarithm ?   \end{quest} 
+\ansbox
+\vspace{1cm}
+
+{\bf Write out all of the properties of logarithms that you know : } \vspace{7cm} 
+\newpage
+{\bf Simplify the following expressions by hand knowing that $\log(2) \approx 0.7 $ } \\
+\begin{enumerate}
+\item $\log\frac{20}{10} $ \\
+\item $\log (8) $\\
+\item $\log(400) $\\
+\item $ \log \frac{1}{40} $ \\
+\end{enumerate}
+
+{\bf Expand the following: } \\
+$ \log( \sqrt{xy} ) $ \\
+$ \log\frac{x^2}{7} $ \\
+
+\begin{quest} What is the general form of an exponential function? \end{quest} 
+\ansbox
+\begin{quest} What is the difference between an exponential growth function and
+an exponential decay function?  \end{quest}
+\ansbox
+\vspace{.5cm}
+
+For the following situations create an appropriate exponential function: \\
+
+{\bf  We start with 100 bacteria cells in a dish.  They triple every hour.    How many do we have at 
+the end of 24 hours?   } 
+\Bansbox
+\vspace{.5cm}
+
+{\bf In 1910 the U.S. population was 92,407,000.   Assume that it increases on average 1.5\% a year.  
+What is the doubling time of the population.   Using your equation, how large should the population
+be in 2013.   Does your prediction match the actual current population?   What can you infer by the difference
+if any?   } \\
+\vspace{7cm} 
+
+
+\begin{quest} What is the general form of an equation that models the interest compounded $n$ times a year
+on a principal investment of $P_0$ dollars at an annual rate (APR) of $r$?   \end{quest}
+\ansbox
+\vspace{.5cm}
+
+
+\begin{quest} What is the equation that model continuous compounding of interest at an APR of $r$ on a $P_0$ principal \end{quest}
+\ansbox
+\vspace{.5cm}
+
+{\bf Designate $\log_e(x) = \ln x$.  Verify that all of the usual logarithm rules apply to the {\it natural log }, $\ln x$.  } 
+
+
+
+\newpage 
+
+{\bf Suppose that \$15,000 was invested on our behalf at a continuously compounded rate.   At the end of 3 years we have \$ 19,020.   What is the annual 
+percentage rate on this investment?    What is the effective annual rate (AYR) ? } 
+
+
+
+
+
+
+\end{document}  

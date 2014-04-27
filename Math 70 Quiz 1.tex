@@ -1,0 +1,90 @@
+\documentclass[11pt]{amsart}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\usepackage{mathtools}
+\usepackage{enumerate}
+\DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\DeclareMathOperator{\Null}{null}
+\DeclareMathOperator{\Dim}{dim}
+\DeclareMathOperator{\range}{range}
+\DeclareMathOperator{\lop}{\mathcal{L}}
+\DeclareMathOperator{\mat}{Mat}
+\DeclareMathOperator{\Span}{span}
+\DeclareMathOperator{\ra}{\rangle}
+\DeclareMathOperator{\la}{\langle}
+\DeclareMathOperator{\Real}{Re}
+\DeclareMathOperator{\R}{{\bf R}}
+\DeclareMathOperator{\C}{{\bf C}}
+\DeclareMathOperator{\Q}{{\bf Q}}
+\DeclareMathOperator{\Z}{{\bf Z}}
+\DeclareMathOperator{\vect}{{\bf v}}
+\DeclareMathOperator{\x}{{\bf x}}
+\DeclareMathOperator{\fix}{{Fix}}
+\DeclareMathOperator{\aut}{{Aut}}
+\DeclareMathOperator{\conv}{{conv}} 
+\newcommand{\vlist}[1]{ {\bf v}_1, {\bf v}_2, \dots , {\bf v}_#1}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+\newcommand{\Bansbox}{
+\begin{center}  
+\begin{tabular}{|c|}        %%%%      Big Box For Answers     %%%%%%%
+\hline
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hline
+\end{tabular}\\
+\end{center}}
+\newcommand{\ansbox}{
+\begin{center}  
+\begin{tabular}{|c|}        %%%%      Big Box For Answers     %%%%%%%
+\hline
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hline
+\end{tabular}\\
+\end{center}}
+\newtheorem*{quest}{Question}
+\newtheorem*{defi}{Definition}
+
+%\date{}                                           % Activate to display a given date or no date
+
+\begin{document}
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+ \textsc{Name: }
+\end{flushleft}
+\end{minipage}
+\begin{minipage}{0.6\textwidth}
+\begin{flushright} \Large
+{\bf Math 70   \\
+Quiz 1!}
+\end{flushright}
+\end{minipage}\\
+
+\HRule
+
+\subsection*{1} Solve for $x$ (your answer can be in terms of logarithms) : 
+$$ 200 e^{.5x} = 400$$
+\Bansbox
+
+\subsection*{2}   The number of users of a new website is doubling on average every month.   Once they 
+get 25,000 users they will be able to get more funding.  How long will it take to get to 25,000 users
+if the number of users double consistently every month?   Give an estimate as well as an exact
+answer in terms of logarithms.  
+
+
+\end{document}  

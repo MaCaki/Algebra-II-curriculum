@@ -1,0 +1,145 @@
+\documentclass[11pt]{amsart}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\usepackage{mathtools}
+\usepackage{enumerate}
+\usepackage{pstricks-add}
+\DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\DeclareMathOperator{\Null}{null}
+\DeclareMathOperator{\Dim}{dim}
+\DeclareMathOperator{\range}{range}
+\DeclareMathOperator{\lop}{\mathcal{L}}
+\DeclareMathOperator{\mat}{Mat}
+\DeclareMathOperator{\Span}{span}
+\DeclareMathOperator{\ra}{\rangle}
+\DeclareMathOperator{\la}{\langle}
+\DeclareMathOperator{\Real}{Re}
+\DeclareMathOperator{\R}{{\bf R}}
+\DeclareMathOperator{\C}{{\bf C}}
+\DeclareMathOperator{\Q}{{\bf Q}}
+\DeclareMathOperator{\Z}{{\bf Z}}
+\DeclareMathOperator{\vect}{{\bf v}}
+\DeclareMathOperator{\x}{{\bf x}}
+\DeclareMathOperator{\fix}{{Fix}}
+\DeclareMathOperator{\aut}{{Aut}}
+\DeclareMathOperator{\conv}{{conv}} 
+\newcommand{\vlist}[1]{ {\bf v}_1, {\bf v}_2, \dots , {\bf v}_#1}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+\newcommand{\Bansbox}{
+\begin{center}  
+\begin{tabular}{|c|}        %%%%      Big Box For Answers     %%%%%%%
+\hline
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hline
+\end{tabular}\\
+\end{center}}
+\newcommand{\ansbox}{
+\begin{center}  
+\begin{tabular}{|c|}        %%%%      Big Box For Answers     %%%%%%%
+\hline
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hline
+\end{tabular}\\
+\end{center}}
+\newtheorem*{quest}{Question}
+\newtheorem*{defi}{Definition}
+\newcommand{\graph}{
+\psset{xunit=0.788593779572266cm,yunit=0.9223730814639903cm}
+\begin{pspicture*}(-9.35,-8.57)(9.67,7.7)
+\psgrid[subgriddiv=0,gridlabels=0,gridcolor=lightgray](0,0)(-9.35,-8.57)(9.67,7.7)
+\psset{xunit=0.788593779572266cm,yunit=0.9223730814639903cm,algebraic=true,dotstyle=o,dotsize=3pt 0,linewidth=0.8pt,arrowsize=3pt 2,arrowinset=0.25}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1,Dy=1,ticksize=-2pt 0,subticks=2]{->}(0,0)(-9.35,-8.57)(9.67,7.7)
+\end{pspicture*}}
+
+
+%\date{}                                           % Activate to display a given date or no date
+
+\begin{document}
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+ \textsc{}
+\end{flushleft}
+\end{minipage}
+\begin{minipage}{0.6\textwidth}
+\begin{flushright} \Large
+{\bf Math 70  \\
+Extra Credit Homework}
+\end{flushright}
+\end{minipage}\\
+
+\HRule
+
+You can turn in solutions to all or some of these problems for a total of 20 extra credit points in your homework category.  
+Feel free to ask questions during office hours about these problems. 
+
+
+
+\begin{enumerate}
+
+\item Find a number $t$ such that the line containing the points $(4,t)$ and $(-1,6)$ is perpendicular to the line that contains the points $(3,5)$
+and $(1, -2)$.  \\
+
+\item Show that the points $(-8, -65),$ $ ( 1,52) $ and $(3, 77) $ do not lie on a line.  \\
+
+
+\item Show that if $x$ and $y$ are positive numbers then $$\sqrt{x+y} < \sqrt{x} + \sqrt{y} $$\\
+
+
+
+\item For the following expressions, find a number $b$ such that the equality is true:
+\begin{enumerate}
+\item$ \log_b 64 = 1 $
+
+\item$ \log_b 64 = 2 $
+\item$ \log_b 64 = 3 $
+\item$ \log_b 64 = 6 $
+\item$ \log_b 64 = \frac{3}{2} $\\
+\end{enumerate}
+
+\item Suppose you invest \$1,000  in a bank account where interest is compounded monthly, 12 times a year.  If you have \$1,040 at the end of the first
+year what was the original annual interest rate? That is what was the APR?\\
+
+\item Given an APR, or annual percentage rate, and the number of times that interest is compounded each year $n$, write an expression that will calculate
+the $AYR$, or actual yield rate.   Then use your expression to calculate the $AYR$ for the following situations: 
+\begin{enumerate}
+\item 9.1\% APR compounded quarterly. 
+\item 4.6\% APR compound monthly. 
+\item 15.9\% APR compounded weekly. \\
+\end{enumerate}
+
+
+\item Suppose that $f(x)$ is a quadratic function whose vertex is at $(3,2)$. Let $g(x) = 4x+ 5$.  What
+are the coordinates of the vertex of the graph of $g\circ f $? \\
+
+
+\item   Suppose that $f(x)  = ax^2 + bx + c$ where $a\neq 0$.    Show that the vertex of a graph of $f$
+is the point $( -\frac{b}{2a} , \frac{4ac - b^2 }{ 4a} )$
+
+
+\end{enumerate}
+
+
+
+
+
+
+
+
+\end{document}  

@@ -1,0 +1,1065 @@
+\documentclass[11pt]{report}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{pstricks-add}
+\newtheorem*{quest}{Question}
+\newtheorem*{defi}{Definition}
+\newcommand{\ansbox}{
+\begin{center}  
+\begin{tabular}{|c|}        %%%%      Big Box For Answers     %%%%%%%
+\hline
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hline
+\end{tabular}\\
+\end{center}}
+\newcommand{\Bansbox}{
+\begin{center}  
+\begin{tabular}{|c|}        %%%%      Big Box For Answers     %%%%%%%
+\hline
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hline
+\end{tabular}\\
+\end{center}}
+
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+
+\date{}  
+                                         % Activate to display a given date or no date
+
+\begin{document}
+\title{Algebra II Workbook }
+\author{For use with Math 70\\SFSU}
+\maketitle
+\tableofcontents
+\chapter*{Chapter 0} \addcontentsline{toc}{chapter}{Chapter 0}
+
+\section*{Beginning Stuff}\addcontentsline{toc}{section}{Beginning Stuff}
+
+
+
+
+For Algebra II, we offer the time to do some review of the fundamental concepts covered in the Algebra I curriculum: 
+
+\begin{itemize}
+\item Arithmetic with fractions
+\item Basics of Geometry 
+\item Translating from natural language to mathematical language
+\item Linear Functions
+\item Solving equations in one variable
+\item Vertex, Factored, and Standard form of Quadratic Polynomials
+\item Basics of Linear Data Analysis
+\end{itemize}
+
+However due to lack of time, we may have to assume familiarity with these and many other concepts.  So if at any time you
+feel that you have forgotten a previous topic, do not hesitate to review before moving on.  Even if you feel that you have mastered
+Algebra I and pre-algebra concepts, it doesn't hurt to constantly review as we often discover new ways to think about old ideas
+that help speed up our thoughts, and facilitate learning more advanced concepts.   \\
+
+Even though much of mathematics cares little for spending time actually computing things ( we have computers to do that for us 
+these days) thinking about {\it quantity} and {\it number} are the two traditional introductions into mathematical thinking.  
+Mathematics is essentially the art of reasoning according to well defined, unambiguous rules of logic.  We accept these 
+rules as a given.   Contradiction is the violation of these rules. Very little else is accepted without rigorous proof.   
+
+Starting from these rules, and few other simple "givens" we can reason out the whole web of mathematical knowledge. 
+In order to start dealing with numbers more effectively, we should think of them as simply well defined objects
+that can interact with each other in predictable ways.
+
+When proceeding through mathematical problems, or any problem in that case, it is crucial that we never jump to the 
+next step, no matter how tiny of a leap is seems, without being completely sure that that next step is even there.  Everything
+that we are doing at this level can be broken down into smaller steps that would almost seem trivially true.   Only by doing
+this can we get to a point where even the big steps seem obvious to us.    Take the time
+to restate the obvious at every level.   Be ready to explain to those who come after you exactly how you got to where you are.   \\
+ 
+ 				%%%%%%%%%%%%%%%%%%				%%%%%%%%%%%%%%%
+				
+				
+ \section*{ Numbers}\addcontentsline{toc}{section}{Numbers}
+ 
+ The most natural definition of a number, are quantities of objects.  Therefore {\bf Natural Numbers} are simply the whole numbers
+ that we are most comfortable dealing with.  Using just addition, we can combine natural numbers to produce other 
+ natural numbers.  
+ 
+ However if we combine numbers by subtraction:
+ $$ 10-15 = -5  $$
+ 
+we might be left with {\bf negative quantities}.  While we might not run into negative numbers just counting apples, they are a
+natural way to express many familiar concepts such as debt and temperature.  
+
+Say I had $\$ 100 $ in my account, and spent \$ 190.  Then my balance of $-\$ 90$ is telling me that I would need to add \$ 90 
+to get back to \$0.  \\
+
+ 
+We'll call all the whole numbers, both positive, negative and zero, {\bf Integers}.  
+
+We know that if we have two integers, {\bf A} and {\bf B}, whatever they are, if we add or subtract them, 
+the result will still be an integer.   \\
+
+\begin{quest}
+{\Large
+If {\bf A} and {\bf B} are integers, is  {\bf A} $\times$ {\bf B} always an integer?}\\
+\end{quest}
+
+\begin{quest}
+{\Large
+If {\bf A} and {\bf B} are integers, is {\bf A} $\div$ {\bf B}  always an integer?}\\
+\end{quest}
+
+
+  
+We can rewrite division as 
+$$ A\div B = \frac{A}{B}$$\\
+
+
+
+\newpage
+
+
+%%%%%%%%%%%%%%%%%%				%%%%%%%%%%%%%%%
+				
+				
+\subsection*{Factoring Integers}\addcontentsline{toc}{subsection}{Factoring Integers}
+
+
+The {\bf fundamental theorem of arithmetic} says that given any integer, we can write it as a product of prime numbers.   
+A {\bf prime number} is simply a number that is only divisible by itself and 1.   
+That is if $p$ is prime, the only factorization of $p$ is 
+$ p = p\times 1$.  \\
+
+However, if we have $N$ an integer that is not prime, then the fundamental theorem of arithmetic says that 
+it can be broken up into prime factors.   
+
+Take for example 10.    10 is not prime, since it is divisible by both 2 and 5.   Therefore we can write 
+$$ 10 = 2\times 5$$
+and since 2 and 5 are both prime, this is the unique factorization of 10.   
+
+Given a larger number, the idea is the same, but the process may just take longer.  
+
+For example 100 is still divisible by both 2 and 5.  There are no other primes that divide 100.  However 4
+goes into 100 as well, as does 25.   But we can further factor these numbers.   Verify that the following is
+a factorization of 100:
+
+$$ 100= 4\times 25 = 2\times 2\times 5\times 5 = 2^2\times 5^2$$
+
+
+But what if we have a large number where we can't easily recognize any factors.    The fundamental theorem
+of arithmetic assures us that it is divisible by some prime number.  However it could be the case that 
+the number itself is prime.   For example, can you find any factors of 541?
+
+Don't try.  It has no factors except itself because it is a prime number. But what about 540?.   Clearly this is 
+divisible by 2, since its even. And you should recognize that it is divisible by 5 and 10 (why?).   
+But we want a complete factorization.  
+
+So the most sure way to completely factor a number is to divide it successively by prime numbers, until 
+we are left with only prime numbers.   
+First lets make a list of some prime numbers: 
+ {\Large
+$$ \{ 2, 3, 5, 7, 11, 13, 17, 19, 23, 29  \} $$
+}
+Can you add anymore? : 
+\ansbox
+
+\begin{quest}{\Large How many prime numbers are there?  }\\
+\end{quest}
+
+Now lets try and factor 540.  First lets divide out all the 2's. Notice that we are not in any way changing 
+the number, we are simply rewriting it in a different form.   And I am not showing the arithmetic, you should
+do this yourself in the margin. 
+\begin{align*}
+540 = & {\bf 2}\cdot 270 \\
+540 = &{\bf 2\cdot 2\cdot }135 \\
+\end{align*}
+We can't take any 2's out of 135, since it is odd.  So we go on to the next prime number, 3:
+
+\begin{align*}
+540 = & 2\cdot 2\cdot{\bf 3}\cdot 45 \\
+540 = & 2\cdot 2\cdot {\bf3\cdot 3} \cdot 15 \\
+540 = & 2\cdot 2\cdot {\bf3\cdot 3 \cdot 3}\cdot 5 \\
+\end{align*}
+Great! We can't take any 3's out of 5, but that's fine since we know that 5 is prime as well.  So now we are finished
+and we have our prime factorization. 
+
+$$ 540 = 2^2\cdot 3^3 \cdot 5$$
+Note that we use exponents for brevity.  See chapter 2.
+
+
+				%%%%%%%%%%%%%%%%%%				%%%%%%%%%%%%%%%
+				
+				
+\section*{Rational Numbers}\addcontentsline{toc}{section}{Rational Numbers}
+We can now build a new type of number from the integers.   
+We'll call these {\bf Rational Numbers}:
+
+\begin{defi}
+\quad {\bf Rational Numbers} are all the things of the form $\frac{A}{B}$ where $A$ and $B$ are integers. 
+\end{defi}
+
+So here are some examples of rational numbers:
+
+$$ \frac{14}{3}  \quad  \frac{17}{2}  \quad  \frac{1}{6}\quad  \frac{29}{30}  \quad  \frac{7}{6}\quad  \frac{30}{29} \quad \frac{9}{1}  \quad \frac{28}{6}     \quad \frac{391}{211} \quad \frac{1}{1009} $$
+
+However we have to now compare these new objects in a way that makes sense.  Just like if we are given
+two integers, 16 and 18, we can clearly say that 18 is more than 16.   We need to also be able to make the
+same sort of statement about rational numbers like $\frac{3}{10}$ and $\frac{1}{3}$.   
+
+First we can try and compare them to the integer 1:\\
+
+
+\begin{quest}
+
+{\Large If $\frac{A}{B} < 1$ then how should we finish this statement:
+$$ A\ \underline{\hspace{.5cm}}\ B  $$}
+
+\end{quest}
+
+
+\begin{quest}
+
+{\Large If $\frac{A}{B}>1$ then how should we finish this statement:
+$$ A\ \underline{\hspace{.5cm}}\ B  $$}
+
+\end{quest}
+
+Now sort the above list of rational numbers into the following categories: \\
+
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+& \\
+ \quad {\LARGE Less than 1  } \quad  &  \quad {\LARGE Greater than 1  } \quad  \\
+ & \\
+ \hline
+  & \\
+   & \\
+    & \\
+     & \\
+ \hline
+
+\end{tabular}\\
+\end{center}
+
+When doing arithmetic with fractions it is always helpful to make it as simple as possible by recognizing certain
+obvious equalities such as 
+{\Large $$ \frac{A}{B} = A\cdot \frac{1}{B} $$} 
+and 
+{\Large $$ \frac{AC}{BC}= \frac{A}{B}$$}
+
+
+
+
+
+
+				%%%%%%%%%%%%%%%%%%				%%%%%%%%%%%%%%%
+\newpage
+
+\section*{Linear Equations}\addcontentsline{toc}{section}{Linear Equations}
+
+Lines on the plane are familiar objects.  But how do we actually {\it define} what a line is?   
+How do we define {\it straightness ? }    Can you come up with a way to describe a  geometrically straight
+curve ( a line) to someone completely unfamiliar with the concept?    Can we just draw an example? 
+Any drawing will necessarily be a finite line segment, and we'll have to explain what happens past the 
+edges.   
+
+Is there some defining feature that stays true along the whole line?  Even without a frame of reference, a grid
+or coordinate system, it seems that a line would still be a line.   A line just seems to pick a direction and 
+go in it forever, without ever changing deviating.   The direction is {\bf constant}\\
+
+However our interest in lines in this course is usually not very geometric.    We use them to represent 
+{\bf algebraic } relationships.   That is we use the line to represent a {\bf set} of {\bf points. }\\
+
+{\bf R\'en\'e Descartes} (1596 - 1650) is often credited with popularizing the use of what is now known as
+the {\bf Cartesian coordinate system} that uses two axis, commonly a $x-$axis and $y-$axis, set at 
+right angles to each other, to graphically represent ordered pairs as {\bf points}.
+
+\begin{defi}
+
+{\large {\bf Point on the plane }: an ordered pair $( x, y)$  ( ordered means that we can't mix up the order
+that we write them in, $(x,y)\neq (y,x) $. )}
+
+\end{defi}
+
+To get an idea of the usefulness of this convention, lets consider the following problem.  \\
+
+\begin{quote}I've just started working at Trader Joe's.  Currently my bank account reads \$40.00.  
+ I will be starting out at \$10/hr. 
+ \end{quote}
+ 
+  Then we have the following table: \\
+ 
+% \begin{table}[htdp]
+%\begin{center}
+%\caption{{\Large Can you fill out the missing entries?} }
+\begin{tabular}{c|c}
+ & \\
+\# of hours worked (H)&Bank Balance(D)\\
+\hline\\
+0 & 40\\
+ & \\
+1 & 50\\
+ & \\
+2 & 60 \\
+ & \\
+3  & \\
+ & \\
+4  & \\
+ & \\
+\vdots  &\\
+    &   110\\
+    \vdots & \\
+  31 & \\  
+\end{tabular}\\ \\
+%\end{center}
+%\label{default}
+%\end{table}%
+
+
+
+It is simple to see how the balance of my account changes.   And it is obvious how the number of hours increases as well.  
+But what if I wanted to display two pieces of information about a {\it single} state: {\bf how much money do I have after working $2$ 
+of hours.   }  
+
+ If we agree that the ordered pair $( H,D)$ will encode the number of hours worked as $H$ and money in the bank as $D$, then 
+we can simply write  $(2,60) $, and know exactly what it means.   These pairs are already there to see on the table, but if we want
+to take advantage of the intuitive graphical nature of the number line, we can plot them on the plane: \\
+
+{\large \bf Graph the pairs of $D$ and $H$ values from the above table, but first label which axis corresponds to which. }\\
+
+\psset{xunit=1.0cm,yunit=1.0cm}
+\begin{pspicture*}(-0.75,-0.5)(10,10)
+\psgrid[subgriddiv=0,gridlabels=0,gridcolor=lightgray](0,0)(-0.75,-0.5)(10,10)
+\psset{xunit=0.5cm,yunit=0.1cm,algebraic=true,dotstyle=o,dotsize=3pt 0,linewidth=0.8pt,arrowsize=3pt 2,arrowinset=0.25}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=2,Dy=10,ticksize=-2pt 0,subticks=2]{->}(0,0)(-1.5,-5)(20,100)
+\end{pspicture*}\\
+
+\begin{quest}{\Large
+What happens when we connect these points?     In what direction is the trend of my account balance 
+as the number of hours increases?   }\end{quest}
+
+
+\newpage
+\subsection*{Graphing Linear Equations}\addcontentsline{toc}{subsection}{Graphing Linear Equations}
+
+You should have noticed that you end up with a straight line when you connected all the points in the previous
+example.  
+
+Lets revert back to algebraic mode, and write out an equation that relates $D$ and $H$: 
+\ansbox
+
+The simplest equation you can write is of the form: 
+
+{\Large $$ D = \text{(Money made per hour )} \cdot H + \text{ Initial amount in account} $$ }
+Verify that this equation matches up with your table. \\
+
+Now this form gives us a very convenient way of describing the {\bf direction} of the line.
+We are going to describe the direction of that line in terms of the vertical movement
+on the graph.  In our case, that means by how much the $D$ value, the account balance, changes.  
+But there are two quantities here that are changing.  My balance only changes when the number of hours
+I work changes.    So in order to be clear, we will agree that we are only concerned about what happens
+to $D$ when $H$ changes by {\bf one unit}.  In our case that means one hour.\\
+
+But how much does my balance change when I work one hour?  That is simply my hourly wage: \$10!. 
+To be more explicit, let's call this {\bf the rate of change of my balance $D$ } .  In our very simply world, 
+we are assuming that the only thing affecting this balance is my income.  And from our perspective, 
+my balance $D$ {\bf depends} on the number of hours I work $H$.  
+
+This is because in our above equation we are describing $D$ in terms of $H$, as some arithmetical 
+operation performed on $H$.   That is my bank balance doesn't just do what it wants, it only changes
+{\bf with respect to} the number of hours I work.   
+
+
+So this way of describing the direction of the line that we graph is very natural, and is simply a generalization
+of the other sorts of {\bf rates} that you encounter all of the time.    \\
+
+When we talk about the graph however, sometimes we call this rate the {\bf slope}, since we are dealing
+with a more geometric quantity.   However we then assume that we are graphing the 
+
+\begin{defi} {\large  Rate of change of $X$} The amount by  
+\end{defi}
+
+How can we graph equations of the form: 
+{\large $$ Ax + By = K$$ } 
+\\
+Determine the slope of the following linear equations:
+\begin{enumerate}
+{\large
+\item   $ 5x -3y = 9$\\
+\item $14x + 2y =0$ \\
+\item $14x -2y = 0$\\
+\item $ -\frac{1}{3}x - 6y = 10$\\
+
+}
+\end{enumerate}
+
+You may have noticed a pattern.  How can we generalize a way to find the slope of a linear equation written 
+in this form? 
+
+\begin{quest}
+
+{\Large   What is the slope of $$ Ax + By = K$$  in terms of $A, B$ and $K$.  Do we need to know what $K$ is? }\\ \\
+\end{quest}
+
+
+\begin{quest}
+
+{\Large   What happens to the graph of $$ Ax + By = K$$  as we change $K$? }
+\end{quest}
+
+
+\newpage
+To answer the last question, it is best to investigate through an example.  
+Let {\large
+$$ 3x+4y = K$$ }
+be our line. {\bf What is the slope of the line?}  Now in order to actually graph it, we need to fix 
+a $K$ value.    Below we see the line for $K=0$ and $K=4$.    \\
+
+{\large \bf Graph the line for $K= 8$.      Now graph the line for $K=-4$.   } \\
+
+
+\newrgbcolor{cqcqcq}{0.75 0.75 0.75}
+\psset{xunit=2.0cm,yunit=2.0cm}
+\begin{pspicture*}(-4,-3)(4,4)
+\psgrid[subgriddiv=0,gridlabels=0,gridcolor=lightgray](0,0)(-4,-3)(4,4)
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dotstyle=o,dotsize=3pt 0,linewidth=0.8pt,arrowsize=3pt 2,arrowinset=0.25}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=2,Dy=2,ticksize=-2pt 0,subticks=2]{->}(0,0)(-8,-6)(8,8)
+\psplot{-8}{8}{(-0-3*x)/4}
+\rput[tl](0.47,-0.98){K=0}
+\rput[tl](1.85,-0.92){K=4}
+\psplot{-8}{8}{(--4-3*x)/4}
+\end{pspicture*}
+
+{\large \bf Draw an arrow pointing in the direction the line will move as $K$ increases 
+and draw an arrow pointing in the direction the line will move as $K$ decreases. }
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\chapter*{Linear Inequalities}  \addcontentsline{toc}{chapter}{Linear Inequalities}
+
+\begin{quote}
+Kensin and Jorge have a space in a lunch wagon where they sell Chicken Burritos
+and Hummus and Feta Wraps. They are very popular and always sell everything
+they bring. This semester they have only 4 hours together to prepare. The
+burritos take 10 minutes each to make and the wraps take 5 minutes each.
+both the burritos and wraps have the same length, but the burritos are each 2
+inches high and the wraps are each a half inch high. Their total space will take
+40 inches of height. They make a profit of \$2 on each burrito and \$1.50 on each
+wrap. How many of each should they make to maximize their profits?
+
+\end{quote}
+
+There is a lot of information contained in this situation.   We have to first start simplifying
+it into terms that will let us more clearly see what is going on.   
+
+First lets agree that {\bf $B$} will be the symbol representing the number of burritos produced in any given
+business plan, and {\bf $W$ }will be the number of wraps.   Do you see how these are the two quantities 
+that we are concerned with?    They can vary, but only within certain {\bf constraints}. \\
+  
+One of the first constraints is given in the following statement:  
+\begin{quotation}{\it This semester they have only 4 hours together to prepare. The
+burritos take 10 minutes each to make and the wraps take 5 minutes each.}
+\end{quotation}
+
+{\bf \large How can we now rephrase this in a succinct algebraic statement about the relationship between $B$ and $W$?\\}
+
+First we note that for every unit of $B$, we have to account for 10 minutes of prep time, and every unit of $W$ contributes
+to 5 minutes of prep time.       However in total we only have 240 minutes of available prep time ( why?   ) .   \\
+
+Therefore we have the following relationship: 
+
+$$ \text{\bf  Total prep time } \text{ NO MORE THAN } 240 \ min $$
+
+But we know that the total prep time will be 10 minutes for every burrito plus 5 minutes for every wrap we make. 
+Therefore {\bf Total prep time} $ = 10\cdot B + 5 \cdot W $.  \\
+And lets use the following notation for the sake of space: 
+
+$$ A \text{ NO MORE THAN } B \Rightarrow  A\leq B $$
+
+This gives us the following algebraic statement: 
+{\Large \bf
+$$ 10B + 5 W \leq 240 $$}
+
+Since both sides of the inequality are in minutes, we don't need to worry about the units.  \\
+
+\begin{quest}
+{\Large
+What are the other constraints given in the problem?  Can you write similar inequalities in
+terms of $B$ and $W$ for those?   \\
+\ansbox
+
+Can you come up with some pairs $(B,W)$ that will satisfy these inequalities?\\ }
+\end{quest}
+\Bansbox
+
+				%%%%%%%%%%%%%%%%%%				%%%%%%%%%%%%%%%
+\newpage
+\section*{Graphing Inequalities } \addcontentsline{toc}{section}{Graphing Linear Inequalities}
+
+Our goal now it try an visually represent the set of points that satisfy equations of the form: 
+
+{\large $$ Ax + By \leq K$$ }
+or 
+{\large $$ Ax + By \geq K$$ }
+
+Graphing the above type of equations will no longer give us just a line.  It will give us a whole {\bf \it region} 
+on the plane: a two dimensional area that contains all the points {\it satisfying} the inequality.  \\
+
+
+Lets look at the statement that we got from the first constraint in our business problem: 
+{\Large \bf
+$$ 10B + 5 W \leq 240 $$}
+
+We want to visually display all of the combinations of burritos and wraps that we can make while
+not taking more than 240 minutes.    However there are two other constraints that we haven't written down, 
+but implicitly understand: we can't make negative numbers of burritos or wraps.  Can you 
+express these as linear inequalities: 
+\ansbox
+
+Now lets draw the region that satisfies these inequalities: 
+
+\newrgbcolor{vvvvvv}{0.33 0.33 0.33}
+\psset{xunit=0.22483712022593857cm,yunit=0.2614279015614099cm,algebraic=true,dotstyle=o,dotsize=3pt 0,linewidth=0.8pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-7.72,-4.6)(41.2,52.78)
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=5,Dy=5,ticksize=-2pt 0,subticks=2]{->}(0,0)(-7.72,-4.6)(41.2,52.78)
+\rput[tl](0.65,51.24){B}
+\rput[tl](28.06,1.64){W}
+\psplot[linecolor=vvvvvv]{-7.72}{41.2}{(--240-10*x)/5}
+\end{pspicture*}\\
+
+\begin{quest} {\Large \bf What part of the graph corresponds to all the {\it feasible} 
+combinations of $B$ and $W$?   \\
+
+Graph the other constraint that you came up with in the last section.  }
+\end{quest}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter*{Exponents}\addcontentsline{toc}{chapter}{Exponents}
+
+
+				%%%%%%%%%%%%%%%%%%				%%%%%%%%%%%%%%%
+				
+				
+\section*{What is an exponent?}\addcontentsline{toc}{section}{What is an exponent?}
+
+Expressions like $10 x $ simply means {\it take $x$ and add it to itself 10 times} or 
+$$ 10x = x + x+ x+ x+ x+x+x+x+x +x $$
+and in general 
+
+$$ nx = \underbrace{x + x + \cdots +x}_{n \text{ times } } $$
+
+But what if we want to {\it multiply} the thing $x$ by itself 10 times.   We can't put the 10 out 
+front since we've already defined what that means.  But if we put it in a different place, then we
+can save ourselves a lot of paper when writing out expressions that involve repeated multiplication. 
+
+
+So lets define:
+
+{\Large  $$ A^n = \underbrace{A \times A \times \cdots \times A}_{n \text{ times } }$$}\\
+
+So   $2^4 = 2\times 2\times 2\times 2 = 16$ and $3^3 = 3\times 3\times 3 = 27$\\
+
+Write out and calculate the following expressions to see if you understand:
+
+\begin{enumerate}
+\item $14^2$
+\item $ 6^3 $
+\item $ 10 ^5$
+\item $( \frac{3}{7})^2$
+\end{enumerate}
+
+While it is not at all necessary to memorize multiplication tables or exponents, it is beneficial to be able 
+to recognize when a number is a square, cube or higher power of a simpler number. For example, 
+if you can see that 256  = $2^8$, that may simplify an expression that you are working with.  So 
+to that end, it may be helpful to just go through at least once, all the powers of some basic numbers. 
+
+\begin{table}[htdp]
+
+\begin{center}
+\begin{tabular}{ccccc}
+$2^0= $ & \hspace{3cm} & $3^0= $& \hspace{3cm} & $5^0=$   \\
+ & & & \\
+$2^1= $ & \hspace{3cm} & $3^1= $& \hspace{3cm} & $5^1=$   \\
+ & & &\\ 
+$2^2= $ & \hspace{3cm} & $3^2= $& \hspace{3cm} & $5^2=$   \\
+ & & & \\
+$2^3= $ & \hspace{3cm} & $3^3= $& \hspace{3cm} & $5^3=$   \\
+ & & & \\
+$2^4= $ & \hspace{3cm} & $3^4= $& \hspace{3cm} & $5^4=$   \\
+ & & &  \\
+$2^5= $ & \hspace{3cm} & $3^5= $& \hspace{3cm} & $5^5=$   \\
+ & & &  \\
+$2^6= $ & \hspace{3cm} & $3^6= $& \hspace{3cm} & $5^6=$   \\
+ & & &  \\
+$2^7= $ & \hspace{3cm} & $3^7= $& \hspace{3cm} & $5^7=$   \\
+ & & &  \\
+$2^8= $ & \hspace{3cm} & $3^8= $& \hspace{3cm} & $5^8=$   \\
+\end{tabular}
+\end{center}
+\end{table}
+
+
+Using simply the definition lets derive some properties of exponents.  Write out concrete
+examples to demonstrate your conclusions, but also try and show them by just using the above definition: \\
+\begin{itemize}
+\item
+{\Large $A^n\cdot A^m =$}
+\newline \newline \newline
+
+\item 
+{\Large $\frac{A^n}{ A^m} =$}
+\newline \newline \newline
+
+\item {\Large $(A^n)^m =$}
+\newline \newline \newline
+
+\item {\Large $(A^n)^m =$}
+\newline \newline \newline
+
+\item {\Large $(A\cdot B)^n =$}
+\newline \newline \newline
+
+\item {\Large $A^{-1}=$}
+\newline \newline \newline
+
+\item {\Large $A^{-n}=$}
+\newline \newline \newline
+
+\item {\Large $A^{0}=$}
+\newline \newline \newline
+\end{itemize}
+
+
+\newpage
+
+
+				%%%%%%%%%%%%%%%%%%				%%%%%%%%%%%%%%%
+				
+				
+				
+\section*{Scientific Notation and Powers of Ten}\addcontentsline{toc}{section}{Scientific Numbers and Powers of Ten}
+
+A number in scientific notation is a number of the form 
+
+\begin{table}[htdp]
+
+\begin{center}
+\begin{tabular}{|c|}
+\hline
+\\
+{\Large
+$  A \times 10^n$
+}\\
+\\
+\hline
+\end{tabular}
+\end{center}
+\label{default}
+\end{table}%
+where $1\leq A<10$ and $n$ is an integer.   That is $A$ is greater than or equal to 1 and less than 10.   What if $A$ is greater than 10. How can we rewrite
+the following numbers in proper scientific notation: 
+
+\begin{enumerate}
+{\large
+\item $10\times 10^{14}$ \\
+\item $58.9  \times 10^7 $\\
+\item $ 16 \times 10^{-3} $\\}
+\end{enumerate}
+
+It is very helpful to associate powers of ten with familiar ways of expressing the same number. For example, $10^2$ is just another
+way of saying 100, and $10^3$ is 1000.   Fill out the following table so we can start to recognize powers of 10: 
+{\Large
+\begin{table}[htdp]
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline 
+
+$n$ & \quad$10^n $\quad\quad  & \quad Metric Prefix \quad  & \quad\quad  \quad\quad Decimal (Expanded form) \quad\quad\quad\quad\quad\quad\quad\quad \\
+\hline
+&  & &\\
+$24$ & $10^{24}$  &   &   \\
+&  & &\\
+$21$ & $10^{21}$  &   &   \\
+&  & &\\
+$18$ & $10^{18}$  &   &   \\
+
+&  & &\\
+$15$ & $10^{15}$  &   &   \\
+&  & &\\
+$12$ & $10^{12}$  &   &   \\
+&  & &\\
+$9$ & $10^{9}$  &   &   \\
+
+&  & &\\
+$6$ & $10^{6}$  &   &   \\
+&  & &\\
+$3$ & $10^{3}$  &   &   \\
+&  & &\\
+$2$ & $10^{2}$  &   &   \\
+&  & &\\
+$1$ & $10^{1}$  &   &   \\&  & &\\
+$0$ & $10^{0}$  &   &   \\
+&  & &\\
+$-1$ & $10^{-1}$  &   &   \\
+&  & &\\
+$-2$ & $10^{-2}$  &   &   \\
+&  & &\\
+$-3$ & $10^{-3}$  &   &   \\
+&  & &\\
+$-6$ & $10^{-6}$  &   &   \\
+&  & &\\
+
+$-9$ & $10^{-9}$  &   &   \\
+&  & &\\
+$-12$ & $10^{-12}$  &   &   \\
+&  & &\\
+$-15$ & $10^{-15}$  &   &   \\
+&  & &\\
+$-18$ & $10^{-18}$  &   &   \\
+&  & &\\
+$-21$ & $10^{-21}$  &   &   \\
+&  & &\\
+
+\hline
+
+\end{tabular}
+\end{center}
+\label{default}
+\end{table}%
+}
+
+\newpage
+
+
+
+				%%%%%%%%%%%%%%%%%%				%%%%%%%%%%%%%%%
+\newpage
+
+\section*{Decimal and Binary numbers}\addcontentsline{toc}{section}{Decimal and Binary numbers}
+
+
+
+
+
+
+
+				%%%%%%%%%%%%%%%%%%				%%%%%%%%%%%%%%%
+				
+				
+\section*{Fractional Exponents}\addcontentsline{toc}{section}{Fractional Exponents}
+
+What you derived above are not "rules" per se.  The only rule that we started out with was the definition of the exponent.  
+The above equalities are consequences of that definition, which you should be able to re-create at anytime.  
+Therefore these are theorems that are true by the rules of arithmetic.  \\
+
+Once we have figured out how the exponents behave when we preform arithmetic on the numbers being 
+"exponents", we can start making sense of fractional exponents.  
+
+For example, using just the above simplify the following expressions: 
+
+\begin{enumerate}
+
+\item $(2^{1/2})^2$\\
+\item $( 5^{1/3} )^3$\\
+\item $( 7^4)^{1/2}$\\
+\end{enumerate}
+
+What do you notice happens to the fractions?  You should remember the idea of taking the {\bf Square Root} of
+a number.  We usually symbolized this by :
+
+$$ \sqrt{X}$$.
+
+However since we know that $\sqrt{X}^2 = X$ and that $(X^{\frac{1}{2}})^2 = X$, we have two things that equal the same thing. 
+Therefore by those two things equal each other.  {\it They say exactly the same thing!} \\
+
+
+\begin{table}[htdp]
+
+\begin{center}
+\begin{tabular}{|c|}
+\hline
+\\
+{\Large
+$  \sqrt{X} = X^{\frac{1}{2}}$
+}\\
+\\
+\hline
+\end{tabular}
+\end{center}
+\label{default}
+\end{table}%
+
+Likewise, the cube root of a number $X$, which simply means the number such that if we cube it ( multiply it by itself 3 times) we get back $X$,
+is usually signified by :
+$$\sqrt[3]{X}$$
+
+However by the same argument above
+$$\sqrt[3]{X} = X^{\frac{1}{3}}$$
+
+
+%%%%%%%%%%%%%%%%%%%%%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\chapter*{Function Notation}\addcontentsline{toc}{chapter}{Function Notation}
+{\Large
+$$f(x)  = 4x + 1$$}
+
+Is a {\it definition} of a function we are naming $f$.  This function, by definition, takes a number as {\bf input} 
+multiplies it by 4, then adds 1.    
+We know that if we graphed all the pairs 
+$$ (X, \text{output of $f(X)$})$$
+ on the Cartesian Coordinate system we would have a line.  
+ 
+ Find the following values where $f(x)$ is defined above: 
+ $$ f(3) =  \underline{\hspace{1cm} } \quad \quad
+ f(-1)   \underline{\hspace{1cm} } \quad \quad
+  f(10)   \underline{\hspace{1cm} } \quad
+  $$
+  
+  Now if we define 
+  $$ g(x) = \frac{1}{2} x -3$$
+  then find 
+  
+  $$ g(4) \underline{\hspace{1cm} } \quad$$
+  
+  What would happen if we {\it composed} the two functions. 
+  
+Can you find the value of  
+$$ f(g(4)) = $$ 
+just using the work you did above?
+ 
+ 
+ 
+ 
+				%%%%%%%%%%%%%%%%%%				%%%%%%%%%%%%%%%
+ \section*{Linear Functions}\addcontentsline{toc}{section}{Linear Functions}
+ 
+ 
+ 
+ 
+				%%%%%%%%%%%%%%%%%%				%%%%%%%%%%%%%%%
+ 
+ 
+ 
+ \section*{Exponential Functions}\addcontentsline{toc}{section}{Exponential Functions}
+ 
+ 
+ Let's revisit the problem of keeping track of Alice's height : 
+ \begin{quote}
+ [Alice] found a little bottleÉ, and tied round the neck of the bottle was a paper label
+with the words ÒDRINK MEÓ beautifully printed in large letters\dots\\
+
+So Alice ventured to taste it, and, finding it very niceÉ, she very soon finished it off.\\
+
+ÒWhat a curious feeling!Ó said Alice. ÒI must be shutting up like a telescope!Ó\\
+
+And so it was indeed: she was now only ten inches high\dots\\
+
+Soon her eye fell on a little glass box that was lying under the table: she opened it,
+and found in it a very small cake, on which the words ÒEAT MEÓ were beautifully
+marked in currants\dots\\
+
+She ate a little bitÉ and very soon finished off the cake.\\
+
+ÒCuriouser and curiouser!Ó cried AliceÉÓNow IÕm opening out like the largest
+telescope that ever was! Goodbye, feet!Ó (for when she looked down at her feet,
+they seemed to be almost out of sight, they were getting so far offÉ.)\\
+
+Just at this moment her head struck against the roof of the hall.\\
+
+SOME QUESTIONS:
+In the story, whenever Alice drinks the beverage, she gets smaller, and when she
+eats the cake, she gets bigger. But the author does not say how much smaller or
+taller, or even how tall Alice was to start with.
+
+Assume that for every ounce of cake Alice eats her height doubles, and for every
+ounce of beverage she drinks, her height is cut in half.
+ \end{quote}  
+ 
+ To make this problem more concrete, let's fix her initial height: 
+ 
+ {\Large $$ H_0 =  \underline{\hspace{2cm} }$$  }
+ 
+ Lets fill in the following table of height values corresponding
+ to how many ounces of cake she ate: 
+ 
+
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+Ounces of Cakes she ate & \quad \quad  Height \quad \quad  \\
+\hline
+ & \\
+ 0 & $H_0 =\quad \quad $\\
+  & \\
+  \hline 
+    & \\
+ 1     & \\
+        & \\
+  \hline
+    & \\
+2    & \\
+        & \\
+  \hline 
+    & \\
+ 3     & \\
+        & \\
+  \hline
+      & \\
+     & \\
+        & \\
+  \hline
+      & \\
+   & \\
+        & \\
+  \hline    & \\
+   & \\
+        & \\
+\hline    
+& \\
+   & \\
+        & \\
+  \hline& \\
+   & \\
+        & \\
+  \hline
+  
+ 
+\end{tabular}
+\end{center}
+
+
+We came to the conclusion that her height is a  {\it function } of the number of ounces of cake she eats.  
+Pick a letter or symbol to denote the amount of cake she ate in ounces, and fill in the following 
+function: 
+
+{\Large $$ h( \hspace{1cm} ) = H_0 \cdot 2^{( \hspace{1cm} ) }$$ }
+Then write the function using your chosen initial height.   \\
+
+There are two components to an {\bf exponential function}, the initial value, or size, 
+and the growth factor. 
+
+In this case, we have an initial height, then every time we increase the number of ounces
+of cake she ate, we multiply that height by 2.   Therefore 2 is the {\bf growth factor}. \\
+
+The following function gives us the population of a bacteria culture as a function of time $t$ in 
+minutes: 
+{Large
+$$ P(t) = 300 \cdot (1.0443)^t$$}
+\begin{quest}{\Large\bf
+What size is the population when $t=0$?\\
+What does that mean the initial population size is, and the growth rate? }
+\end{quest}
+
+
+Now fill out a table and come up with an expression for finding Alice's height
+for every ounce of beverage that she drank:
+
+
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+Ounces of Beverage she Drank & \quad \quad  Height \quad \quad  \\
+\hline
+ & \\
+ 0 & $H_0= \quad \quad $\\
+  & \\
+  \hline 
+    & \\
+ 1     & \\
+        & \\
+  \hline
+    & \\
+2    & \\
+        & \\
+  \hline 
+    & \\
+ 3     & \\
+        & \\
+  \hline
+      & \\
+     & \\
+        & \\
+  \hline
+      & \\
+   & \\
+        & \\
+  \hline    & \\
+   & \\
+        & \\
+  \hline    & \\
+   & \\
+        & \\
+  \hline
+    & \\
+   & \\
+        & \\
+  \hline
+  
+ 
+\end{tabular}
+\end{center}
+
+
+
+ 
+ \section*{Logarithmic Functions}  \addcontentsline{toc}{section}{Logarithmic Functions}
+ 
+\begin{quest} What is an exponent? \end{quest}\Bansbox
+
+
+Let $A$ and $B$ be positive real numbers and $p$ any number.  For each of the following expressions, find
+an equivalent expression that only involves $\log A$ and $\log B$.  \\
+
+\begin{quest} $\log(A\cdot B) = $ \end{quest} \Bansbox
+
+\begin{quest} $\log(A/B) = $ \end{quest} \Bansbox
+
+\newpage
+\begin{quest} $\log(A^p) = $ \end{quest} \Bansbox
+
+\begin{quest} $\log(1) = $ \end{quest} \Bansbox
+
+\begin{quest} Find a way to express $\log_2(x)$, the base 2 logarithm using $\log(x)$, or the base 10 logarithm. \end{quest}\Bansbox
+
+
+Determine whether the following are true:\\
+\begin{enumerate}
+\item $ \log(10^2 \cdot 10^3 ) = \log 10^2 + \log 10^3 $\\
+\item $ \log(10^5\cdot 10^{-7} ) = \log 10^5 + \log 10^{-7} $\\
+\item $\log(10^2/10^3) = \log 10^2 - \log 10^3 $\\
+\item $ \log(10^3/10^{-3}) = \log 10^3/\log 10^{-3}$
+\end{enumerate}
+
+ 
+ 
+ 
+ 
+ 
+
+\end{document}  

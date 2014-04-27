@@ -1,0 +1,146 @@
+\documentclass[11pt]{amsart}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\usepackage{mathtools}
+\usepackage{enumerate}
+\usepackage{pstricks-add}
+\DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\DeclareMathOperator{\Null}{null}
+\DeclareMathOperator{\Dim}{dim}
+\DeclareMathOperator{\range}{range}
+\DeclareMathOperator{\lop}{\mathcal{L}}
+\DeclareMathOperator{\mat}{Mat}
+\DeclareMathOperator{\Span}{span}
+\DeclareMathOperator{\ra}{\rangle}
+\DeclareMathOperator{\la}{\langle}
+\DeclareMathOperator{\Real}{Re}
+\DeclareMathOperator{\R}{{\bf R}}
+\DeclareMathOperator{\C}{{\bf C}}
+\DeclareMathOperator{\Q}{{\bf Q}}
+\DeclareMathOperator{\Z}{{\bf Z}}
+\DeclareMathOperator{\vect}{{\bf v}}
+\DeclareMathOperator{\x}{{\bf x}}
+\DeclareMathOperator{\fix}{{Fix}}
+\DeclareMathOperator{\aut}{{Aut}}
+\DeclareMathOperator{\conv}{{conv}} 
+\newcommand{\vlist}[1]{ {\bf v}_1, {\bf v}_2, \dots , {\bf v}_#1}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+\newcommand{\Bansbox}{
+\begin{center}  
+\begin{tabular}{|c|}        %%%%      Big Box For Answers     %%%%%%%
+\hline
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hline
+\end{tabular}\\
+\end{center}}
+\newcommand{\ansbox}{
+\begin{center}  
+\begin{tabular}{|c|}        %%%%      Big Box For Answers     %%%%%%%
+\hline
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hline
+\end{tabular}\\
+\end{center}}
+\newtheorem*{quest}{Question}
+\newtheorem*{defi}{Definition}
+\newcommand{\graph}{
+\psset{xunit=0.788593779572266cm,yunit=0.9223730814639903cm}
+\begin{pspicture*}(-9.35,-8.57)(9.67,7.7)
+\psgrid[subgriddiv=0,gridlabels=0,gridcolor=lightgray](0,0)(-9.35,-8.57)(9.67,7.7)
+\psset{xunit=0.788593779572266cm,yunit=0.9223730814639903cm,algebraic=true,dotstyle=o,dotsize=3pt 0,linewidth=0.8pt,arrowsize=3pt 2,arrowinset=0.25}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1,Dy=1,ticksize=-2pt 0,subticks=2]{->}(0,0)(-9.35,-8.57)(9.67,7.7)
+\end{pspicture*}}
+
+
+%\date{}                                           % Activate to display a given date or no date
+
+\begin{document}
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+ \textsc{Name}
+\end{flushleft}
+\end{minipage}
+\begin{minipage}{0.6\textwidth}
+\begin{flushright} \Large
+{\bf Math 70  \\
+Quiz 6}
+\end{flushright}
+\end{minipage}\\
+
+\HRule
+
+
+\begin{enumerate}
+
+
+
+\item Using the definition of the logarithm function, show that the following equality is true: 
+$$ \log(A\cdot B) = \log(A) + \log(B) $$
+\vspace{5cm}
+
+\item Expand the following: \\
+
+$\log\left(\frac{3x^2}{y+1}\right)^3$\\
+
+\vspace{1cm}
+
+$\log\sqrt{(x+1)(x+4)}$
+\vspace{1cm}
+
+\item Solve for x:\\ 
+
+$10^{3x+ 4} = 10,000$\\
+
+\vspace{1cm}
+
+$ 5^{\frac{x}{2}-1} = 625$
+\vspace{1cm}
+
+
+
+\newpage
+\item How long does it take for \$15,000 to grow to \$50,000 at an 8.5\% annual rate 
+compounded continuously?  
+
+\vspace{4cm}
+
+
+
+
+
+
+
+
+
+\item
+A the amount of a radioactive element left of a sample is given by: 
+$$ M(t) = 140e^{-0.031t}$$
+Where is $t$ measured in years.  What is the half life of this element?   That
+is how long does it take for the sample to decay to half of it's original amount?  
+
+How long does it take for the sample to decay to $\frac{1}{8}$ of it's original amount?
+
+
+
+
+\end{enumerate}
+
+
+\end{document}  

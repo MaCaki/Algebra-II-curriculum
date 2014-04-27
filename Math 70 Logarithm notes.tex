@@ -1,0 +1,97 @@
+\documentclass[11pt]{amsart}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\usepackage{mathtools}
+\usepackage{enumerate}
+\DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\DeclareMathOperator{\Null}{null}
+\DeclareMathOperator{\Dim}{dim}
+\DeclareMathOperator{\range}{range}
+\DeclareMathOperator{\lop}{\mathcal{L}}
+\DeclareMathOperator{\mat}{Mat}
+\DeclareMathOperator{\Span}{span}
+\DeclareMathOperator{\ra}{\rangle}
+\DeclareMathOperator{\la}{\langle}
+\DeclareMathOperator{\Real}{Re}
+\DeclareMathOperator{\R}{{\bf R}}
+\DeclareMathOperator{\C}{{\bf C}}
+\DeclareMathOperator{\Q}{{\bf Q}}
+\DeclareMathOperator{\Z}{{\bf Z}}
+\DeclareMathOperator{\vect}{{\bf v}}
+\DeclareMathOperator{\x}{{\bf x}}
+\DeclareMathOperator{\fix}{{Fix}}
+\DeclareMathOperator{\aut}{{Aut}}
+\newtheorem*{quest}{Question}
+\newtheorem*{defi}{Definition}
+\newcommand{\Bansbox}{
+\begin{center}  
+\begin{tabular}{|c|}        %%%%      Big Box For Answers     %%%%%%%
+\hline
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hspace{4.5in} \\
+\hline
+\end{tabular}\\
+\end{center}} 
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+%\date{}                                           % Activate to display a given date or no date
+
+\begin{document}
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+Unit 3: {\bf Logaritmic functions}
+\end{flushleft}
+\end{minipage}
+\begin{minipage}{0.6\textwidth}
+\begin{flushright} \Large
+{\bf Math 70 }  \\
+Notes
+\end{flushright}
+\end{minipage}\\
+
+\HRule
+
+
+\begin{quest} What is an exponent? \end{quest}\Bansbox
+
+
+Let $A$ and $B$ be positive real numbers and $p$ any number.  For each of the following expressions, find
+an equivalent expression that only involves $\log A$ and $\log B$.  \\
+
+\begin{quest} $\log(A\cdot B) = $ \end{quest} \Bansbox
+
+\begin{quest} $\log(A/B) = $ \end{quest} \Bansbox
+
+\newpage
+\begin{quest} $\log(A^p) = $ \end{quest} \Bansbox
+
+\begin{quest} $\log(1) = $ \end{quest} \Bansbox
+
+\begin{quest} Find a way to express $\log_2(x)$, the base 2 logarithm using $\log(x)$, or the base 10 logarithm. \end{quest}\Bansbox
+
+
+Determine whether the following are true:\\
+\begin{enumerate}
+\item $ \log(10^2 \cdot 10^3 ) = \log 10^2 + \log 10^3 $\\
+\item $ \log(10^5\cdot 10^{-7} ) = \log 10^5 + \log 10^{-7} $\\
+\item $\log(10^2/10^3) = \log 10^2 - \log 10^3 $\\
+\item $ \log(10^3/10^{-3}) = \log 10^3/\log 10^{-3}$
+\end{enumerate}
+
+
+
+
+\end{document}  

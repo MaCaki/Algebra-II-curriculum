@@ -1,0 +1,114 @@
+\documentclass[11pt]{amsart}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\usepackage{enumerate}
+\usepackage{pstricks-add}
+
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\title{Math 60: Unit Assessment}
+
+%\date{}                                           % Activate to display a given date or no date
+
+\begin{document}
+%\maketitle
+
+\section*{\bf  Math 70: Exam 1 }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Simplify the following expressions as much as possible: \\
+
+\begin{enumerate}
+
+\item $\sqrt{8x^2}$\\ \\ \\ \\ 
+
+
+
+
+\item $ (\sqrt[3]{x})^{9} $ \\ \\ \\ \\ 
+
+ \item $\sqrt{52x} $ \\ \\ \\ \\ 
+ \item $\sqrt{100x^4z }$\\ \\ \\ \\ 
+\item $ (32 x^5)^{1/5 }$\\ \\ \\ \\ 
+ 
+  \item{\Large $\frac{2.5\times 10^4}{5\times 10^8} $} \\ \\ \\ \\ \\
+  
+    \item $ 10^{-9}\cdot 10^{10} $ \\ \\ \\ \\ \\
+    
+        \item $ 10^4\cdot 10^{5} $ \\ \\ \\ \\ \\
+
+\end{enumerate}
+
+
+\subsection*{Graph the following inequality :}
+$$2x + 3y \leq 6 $$ \\
+
+
+\psset{xunit=0.788593779572266cm,yunit=0.9223730814639903cm}
+\begin{pspicture*}(-9.35,-8.57)(9.67,7.7)
+\psgrid[subgriddiv=0,gridlabels=0,gridcolor=lightgray](0,0)(-9.35,-8.57)(9.67,7.7)
+\psset{xunit=0.788593779572266cm,yunit=0.9223730814639903cm,algebraic=true,dotstyle=o,dotsize=3pt 0,linewidth=0.8pt,arrowsize=3pt 2,arrowinset=0.25}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1,Dy=1,ticksize=-2pt 0,subticks=2]{->}(0,0)(-9.35,-8.57)(9.67,7.7)
+\end{pspicture*}
+
+\newpage
+
+
+
+
+\subsection*{Graph the following inequalities on a single graph, and find the vertices of the resulting region. }
+$$ \left\{  \begin{array}{cc}
+    x+2y & \leq 4 \\
+    x-y   &\geq 1 \\
+    x  & \geq 0 
+  \end{array} \right.$$
+
+\psset{xunit=0.788593779572266cm,yunit=0.9223730814639903cm}
+\begin{pspicture*}(-9.35,-8.57)(9.67,7.7)
+\psgrid[subgriddiv=0,gridlabels=0,gridcolor=lightgray](0,0)(-9.35,-8.57)(9.67,7.7)
+\psset{xunit=0.788593779572266cm,yunit=0.9223730814639903cm,algebraic=true,dotstyle=o,dotsize=3pt 0,linewidth=0.8pt,arrowsize=3pt 2,arrowinset=0.25}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1,Dy=1,ticksize=-2pt 0,subticks=2]{->}(0,0)(-9.35,-8.57)(9.67,7.7)
+\end{pspicture*}
+
+
+
+\newpage
+
+{\bf You are sent to the market to purchase flour for a bakery for the week.    Storage at the baker can handle at most 250 more lbs. of flour.  However there are 
+two kinds of flour you can buy: white and whole wheat.   The baker needs at least 75 lbs of whole wheat flour this week, and at least 100 lbs. of white flour.  }\\
+\begin{enumerate}[a]
+\item  {\it \large Write a system of inequalities describing the above constraints using  $X$ to represent the amount of white flour you purchase, and $Y$ to represent
+the amount of whole wheat flour.   }  \\ \\ \\ \\ \\ \\ \\ \\ \\
+
+
+\newpage
+\item {\ Graph the feasible region described by those inequalities and label the coordinates of the vertices. }\\
+\psset{xunit=0.9541984732824428cm,yunit=1.1160714285714282cm,algebraic=true,dotstyle=o,dotsize=3pt 0,linewidth=0.8pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-0.96,-0.96)(14.76,12.48)
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=100,Dy=100,ticksize=-0pt 0,subticks=0]{->}(0,0)(-0.96,-0.96)(14.76,12.48)
+\end{pspicture*}\\ 
+
+
+
+\item{ Find three points that are in the feasible region } \\ \\ \\ \\ 
+
+
+
+
+\item{ \it {\bf Extra Credit}  If whole wheat flour costs \$0.50/lb. and white flour costs \$0.75/lb find the cheapest combination and the most 
+expensive combination within the feasible region.   } 
+\end{enumerate}
+
+
+
+
+
+
+
+
+\end{document}  
